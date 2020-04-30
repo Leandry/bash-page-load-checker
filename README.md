@@ -7,6 +7,8 @@ Simple bash script to check page load time, time to first bite for website
 ```
 
 # Parameters
- -h, --help                         Display help information"
- -u, --url                          Website URL (example: http://example.com)"
- -i, --iterations                   Check iterations count"
+ -h, --help                         Display help information
+ 
+ -u, --url                          Website URL (example: http://example.com)
+ 
+ -i, --iterations                   Check iterations count
