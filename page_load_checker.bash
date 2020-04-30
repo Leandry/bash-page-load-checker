@@ -18,11 +18,6 @@ close_on_error(){
         exit 99
 }
 
-#check_variables(){
-#    [[ -z ${URL} ]] && close_on_error "--environment argument not set" && display_help
-#    [[ -z ${ITERATIONS} ]] && close_on_error "--project argument not set" && display_help
-#}
-
 validate_url(){
     regex='(https?|http?)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'
     [[ -z ${URL} ]] && read -p "Enter website URL:  " URL
