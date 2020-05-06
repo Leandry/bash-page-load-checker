@@ -70,9 +70,9 @@ for i in ${total_arr[@]}
      total_arr_total=$(echo $total_arr_total+$i | bc )
      ((total_arr_count++))
    done
-avarage_connect=$(echo "$connect_total / $connect_arr_count" | bc)
-avarage_ttfb=$(echo "$ttfb_arr_total / $ttfb_arr_count" | bc)
-avarage_total=$(echo "$total_arr_total / $total_arr_count" | bc)
+avarage_connect=$(echo "scale=6; $connect_total / $connect_arr_count" | bc)
+avarage_ttfb=$(echo "scale=6; $ttfb_arr_total / $ttfb_arr_count" | bc)
+avarage_total=$(echo "scale=6; $total_arr_total / $total_arr_count" | bc)
 echo "Average Connect Time: ${avarage_connect}"
 echo "Average TTFB Time: ${avarage_ttfb}"
 echo "Average Total Time: ${avarage_total}"
